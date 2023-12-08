@@ -11,7 +11,6 @@ import java.util.List;
 @RestController
 public class ProductRestController {
         private ProductRepository productRepository;
-
         public ProductRestController(ProductRepository productRepository) {
             this.productRepository = productRepository;
         }

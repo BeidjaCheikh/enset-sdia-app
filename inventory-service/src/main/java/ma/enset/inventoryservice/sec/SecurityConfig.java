@@ -16,10 +16,7 @@ public class SecurityConfig {
     public SecurityConfig(JwtAuthConverter jwtAuthConverter) {
         this.jwtAuthConverter = jwtAuthConverter;
     }
-
     private  JwtAuthConverter jwtAuthConverter;
-
-
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http
